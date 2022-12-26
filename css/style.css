@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.tabs img{
+    width: 110px;
+    height: 160px;
+    padding-top: 200px;
+}
+.tabs input{
+    display: none;
+}
+#sport:checked~.flowers1,
+#sport:checked~.flowers2,
+#sport:checked~.food1,
+#sport:checked~.food2,
+#sport:checked~.dress1,
+#sport:checked~.dress2,
+#sport:checked~.car1,
+#sport:checked~.car2{
+    opacity:.3;
+    transition: .4s;
+}
+#food:checked~.sport1,
+#food:checked~.sport2,
+#food:checked~.dress2,
+#food:checked~.dress1,
+#food:checked~.car2,
+#food:checked~.car1,
+#food:checked~.flowers1,
+#food:checked~.flowers2 {
+    opacity:.3;
+    transition: .4s;
+}
+#dress:checked~.sport1,
+#dress:checked~.sport2,
+#dress:checked~.food1,
+#dress:checked~.food2,
+#dress:checked~.car1,
+#dress:checked~.car2,
+#dress:checked~.flowers1,
+#dress:checked~.flowers2{
+    opacity:.3;
+    transition: .4s;
+}
+#car:checked~.sport1,
+#car:checked~.sport2,
+#car:checked~.flowers1,
+#car:checked~.flowers2,
+#car:checked~.food1,
+#car:checked~.food2,
+#car:checked~.dress1,
+#car:checked~.dress2{
+    opacity:.3;
+    transition: .4s;
+}
+#flowers:checked~.sport1,
+#flowers:checked~.sport2,
+#flowers:checked~.food1,
+#flowers:checked~.food2,
+#flowers:checked~.dress1,
+#flowers:checked~.dress2,
+#flowers:checked~.car1,
+#flowers:checked~.car2 {
+    opacity:.3;
+    transition: .4s;
+}
+#all:checked~.sport1,
+#all:checked~.sport2,
+#all:checked~.food1,
+#all:checked~.food2,
+#all:checked~.dress1,
+#all:checked~.dress2,
+#all:checked~.car1,
+#all:checked~.car2,
+#all:checked~.flowers1,
+#all:checked~.flowers2{
+    transition: .4s;
+}
+#hero{
+    background: linear-gradient(45deg, white,midnightblue);
+    min-height: 100vh;
+}
+.label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 70px;
+}
+.label label{
+    font-size: 30px;
+    font-family:sans-serif;
+    background: white;
+    color: red;
+    border-radius: 10%;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+.label label:hover{
+    transform: scale(1.1);
+    background: black;
+}
+
